@@ -5,21 +5,21 @@
 class Sr < Formula
   desc "Bulk reverse DNS (PTR) lookups on CIDR ranges"
   homepage "https://github.com/klp2/sr"
-  version "0.3.0"
+  version "0.4.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/klp2/sr/releases/download/v0.3.0/sr_0.3.0_darwin_amd64.tar.gz"
-      sha256 "371556ba69325c04c260ca83018c91b688cc798f37d8608a034ad2d2024df885"
+      url "https://github.com/klp2/sr/releases/download/v0.4.0/sr_0.4.0_darwin_amd64.tar.gz"
+      sha256 "b3ef09134e233b0a52f73e0ecda03f680a0cbdb8391e29e471967af0e5d6099a"
 
       def install
         bin.install "sr"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/klp2/sr/releases/download/v0.3.0/sr_0.3.0_darwin_arm64.tar.gz"
-      sha256 "f819f51dc1465b3f720f41714c0e81e73caf1a454930cd0398d8c8e27e71d6c2"
+      url "https://github.com/klp2/sr/releases/download/v0.4.0/sr_0.4.0_darwin_arm64.tar.gz"
+      sha256 "960b6b5ff82a17f8c1900ea9d39eaa7aa345a90cacac913473e640082f1dd896"
 
       def install
         bin.install "sr"
@@ -29,15 +29,15 @@ class Sr < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/klp2/sr/releases/download/v0.3.0/sr_0.3.0_linux_amd64.tar.gz"
-      sha256 "6b057e304de5e18b5908482bfa3eac26c5436e8c6fe474cd9599b2e1d9ad7b39"
+      url "https://github.com/klp2/sr/releases/download/v0.4.0/sr_0.4.0_linux_amd64.tar.gz"
+      sha256 "0817299b57f9fc9f2ba2e0946c3ea8211f6f647a5757c0ef3a684fc878ff0c34"
       def install
         bin.install "sr"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/klp2/sr/releases/download/v0.3.0/sr_0.3.0_linux_arm64.tar.gz"
-      sha256 "820e033d6dc4eb84be3a089bf4c6a80dd86315df90b1405afea095aea2601efd"
+      url "https://github.com/klp2/sr/releases/download/v0.4.0/sr_0.4.0_linux_arm64.tar.gz"
+      sha256 "0352207b7a6f0298cc97b70895bb0a30467d3e14c53ea79a41ad682c964f110b"
       def install
         bin.install "sr"
       end
